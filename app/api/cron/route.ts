@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
   try {
     let processedCount = 0;
     let newArticlesCount = 0;
-    let errors: string[] = [];
+    const errors: string[] = [];
 
     // Process each RSS feed
     for (const feedUrl of RSS_FEEDS) {
